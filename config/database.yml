@@ -50,5 +50,5 @@ test:
 production:
   <<: *default
   database: consolelog_production
-  username: consolelog
+  username: <%= ENV['CONSOLELOG_DATABASE_ROOT'] %>
   password: <%= ENV['CONSOLELOG_DATABASE_PASSWORD'] %>
