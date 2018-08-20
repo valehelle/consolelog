@@ -13,12 +13,12 @@ default: &default
   adapter: mysql2
   encoding: utf8
   pool: <%= ENV.fetch("RAILS_MAX_THREADS") { 5 } %>
-  username: root
-  password: root
   socket: /var/run/mysqld/mysqld.sock
 
 development:
   <<: *default
+  username: root
+  password: root
   database: consolelog_development
 
 # Warning: The database defined as "test" will be erased and
