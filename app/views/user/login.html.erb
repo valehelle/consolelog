@@ -1,0 +1,6 @@
+Login
+<%= form_for @user, url: {action: "create"}, html: {class: "nifty_form"} do |f| %>
+    <%= f.text_field :email %>
+    <%= f.text_field :password %>
+    <%= f.submit "Create" %>
+  <% end %>
