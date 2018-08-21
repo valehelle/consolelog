@@ -53,5 +53,5 @@ production:
   pool: <%= ENV.fetch("RAILS_MAX_THREADS") { 5 } %>
   socket: /var/run/mysqld/mysqld.sock
   database: consolelog_production
-  username: <%= Rails.application.credentials.production[:CONSOLELOG_DATABASE_USER] %>
-  password: <%=  Rails.application.credentials.production[:CONSOLELOG_DATABASE_PASSWORD] %>
+  username: <%= Rails.application.credentials.CONSOLELOG_DATABASE_USER %>
+  password: <%= Rails.application.credentials.CONSOLELOG_DATABASE_PASSWORD %>
